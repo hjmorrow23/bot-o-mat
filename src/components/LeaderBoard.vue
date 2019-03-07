@@ -11,7 +11,7 @@
                 <tr v-for="(robot, index) in $store.getters.robots.sort((a,b) => b.tasksCompleted - a.tasksCompleted)" :key="index">
                     <td>{{index + 1}}. {{robot.robotName}}</td>
                     <td>{{robot.tasksCompleted}}</td>
-                </tr>
+                </tr> 
             </tbody>
         </table>
         <p v-else>Make some Robots first then check here for their stats</p>
